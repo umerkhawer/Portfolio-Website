@@ -58,6 +58,21 @@
 		},
 	});
 
+	$(document).ready(function () {
+		$('.gallery-popup').magnificPopup({
+			type: 'iframe',
+			iframe: {
+				patterns: {
+					youtube: {
+						index: 'youtube.com/', // String that detects YouTube links
+						id: 'v=', // String that splits the URL to get the video ID
+						src: 'https://www.youtube.com/embed/%id%?autoplay=1' // URL for embedding videos
+					}
+				}
+			}
+		});
+	});
+
 	// Client feedback slider js
 	$(".client-feedback-slider").slick({
 		slidesToShow: 2,

@@ -561,7 +561,7 @@ p {
 .card-projects .project-item .image .info .category {
 	font-size: 12px;
 	font-weight: 500;
-	color: var(--primary);
+	color: rgb(0, 0, 0);
 	background-color: var(--white);
 	border-radius: 4px;
 	padding: 4px 8px;
@@ -587,11 +587,6 @@ p {
 	transition: var(--transision);
 	visibility: hidden;
 	opacity: 0;
-}
-
-.card-projects .project-item .image .full-image-preview .icon {
-	width: 22px;
-	height: 22px;
 }
 
 .card-projects .project-item .image:hover .full-image-preview {
