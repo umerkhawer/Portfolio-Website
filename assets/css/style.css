@@ -106,6 +106,9 @@ button:focus {
 	box-shadow: none;
 }
 
+a.tags {
+    color: black !important;
+}
 
 ul,
 ol {
@@ -1842,7 +1845,7 @@ p {
 	position: absolute;
 	width: 3px;
 	height: 3px;
-	background-color: rgba(87, 96, 118, 0.5);
+	background-color: rgba(255, 0, 0, 0.5);
 	border-radius: 50%;
 	content: "";
 	top: 50%;
