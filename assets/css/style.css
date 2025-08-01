@@ -2583,3 +2583,15 @@ p {
 	background-color: var(--primary);
 	color: var(--white);
 }
+
+.filter-buttons .btn {
+  min-width: 120px; /* Optional: makes all buttons same width */
+  padding: 10px 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.filter-buttons .btn:hover {
+  background-color: #4770ff; /* Adjust as needed */
+  color: #fff;
+}
