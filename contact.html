@@ -249,14 +249,14 @@
                   <div class="top-info">
                     <div class="text">
                       <h1 class="main-title">Let's 👋 <span>Work</span> Together</h1>
-                      <p>I'm here to help if you're searching for a product designer to bring your idea to life or a
+                      <p style="display: none;">I'm here to help if you're searching for a product designer to bring your idea to life or a
                         design partner to help take your business to the next level.</p>
                     </div>
                   </div>
                   <div class="contact-area">
                     <div class="leave-comments-area">
-                      <div class="comments-box">
-                        <form id="contact-form" action="assets/mail.php" method="POST">
+                      <div class="">
+                        <form id="contact-form" action="assets/mail.php" method="POST" style="display:none;">
                           <div class="row gx-3">
                             <div class="col-md-6">
                               <div class="mb-4">
@@ -309,6 +309,43 @@
                             </div>
                           </div>
                         </form>
+                       
+<!-- Container -->
+<div style="text-align:center; margin:0; padding:0;">
+
+  <!-- Rive Canvas -->
+  <canvas id="canvas" width="500" height="500" style="background:transparent; max-width:58%; height:auto; display:block; margin:-48px auto 0 auto;"></canvas>
+
+  <!-- Links in a row -->
+  <div style="margin-top:20px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
+    <a href="https://youtube.com/YOURCHANNEL" target="_blank"
+       style="padding:15px 25px; background:#4770ff; color:white; text-decoration:none; border-radius:8px; font-weight:bold;">
+      YouTube
+    </a>
+
+    <a href="https://instagram.com/YOURUSERNAME" target="_blank"
+       style="padding:15px 25px; background:#4770ff; color:white; text-decoration:none; border-radius:8px; font-weight:bold;">
+      Instagram
+    </a>
+
+    <a href="https://linkedin.com/in/YOURUSERNAME" target="_blank"
+       style="padding:15px 25px; background:#4770ff; color:white; text-decoration:none; border-radius:8px; font-weight:bold;">
+      LinkedIn
+    </a>
+
+    <a href="https://www.upwork.com/freelancers/~YOURPROFILEID" target="_blank"
+       style="padding:15px 25px; background:#4770ff; color:white; text-decoration:none; border-radius:8px; font-weight:bold;">
+      Upwork
+    </a>
+  </div>
+
+</div>
+
+
+
+
+
+
                         <p class="ajax-response mb-0"></p>
                       </div>
                     </div>
@@ -484,6 +521,23 @@
   <script src="assets/js/clipboard.min.js"></script>
   <script src="assets/js/slick.min.js"></script>
   <script src="assets/js/script.js"></script>
+   <script src="https://unpkg.com/@rive-app/canvas"></script>
+   <script src="https://unpkg.com/@rive-app/canvas-lite"></script>
+   <script>
+    const r = new rive.Rive({
+        src: "assets/contact_girl.riv",
+        // OR the path to a discoverable and public Rive asset
+        // src: '/public/example.riv',
+        canvas: document.getElementById("canvas"),
+        autoplay: true,
+        // artboard: "Artboard", // Optional. If not supplied the default is selected
+        stateMachines: "GirlState",
+        onLoad: () => {
+          r.resizeDrawingSurfaceToCanvas();
+        },
+    });
+</script>
+
 </body>
 
 
